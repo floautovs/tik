@@ -1,0 +1,222 @@
+body{
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+h2{
+    background-color: rgb(126, 215, 109);
+    color:rgb(49, 121, 45);
+    text-align: center;
+    font-family:"veranda";
+}
+h3{
+    background-color: rgb(165, 244, 254);
+    color:rgb(36, 112, 152);
+    text-align: center;
+    font-family:"veranda";
+}
+h4{
+    background-color: rgb(255, 186, 245);
+    color:rgb(168, 66, 90);
+    text-align: center;
+    font-family:"veranda";
+}
+h5{
+    background-color: rgb(232, 178, 255);
+    color:rgb(98, 38, 104);
+    text-align: center;
+    font-family:"veranda";
+}
+/* format font : .otf/.tff */
+@font-face {
+    font-family:"veranda";
+    src: url("veranda_reverie/veranda_reverie.otf")
+}
+h1{
+    background-color:rgb(216, 156, 244) ;
+    color: rgb(71, 28, 123);
+    text-align: center;
+    width: 500px;
+}
+div.biodata{
+    margin: 30px auto;
+    width: 70%;
+    background-color: rgb(255, 198, 251);
+    color: rgb(150, 56, 106);
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+div.foto{
+    position: relative;
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid;
+}
+div.foto img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5 ease, opacity 0.5 ease;
+}
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+div.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+div.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+div.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+div.makanan {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    width: 100%;
+}
+div.salmon,
+div.naan,
+div.carbonara {
+    width: 200px;
+    padding: 12px 12px 25px 12px;
+    background-color:rgb(233, 227, 149) ;
+    box-shadow: 0 5px 12px rgba(38, 104, 103, 0.445);
+    border-radius: 3px;
+    transition: transform 0.3s ease;
+}
+
+div.salmon img,
+div.naan img,
+div.carbonara img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0;
+    display: block;
+}
+div.salmon p,
+div.naan p,
+div.carbonara p {
+    font-family: "abcd";
+    color: #86550d;
+    font-size: 18px;
+}
+
+div.salmon:hover,
+div.naan:hover,
+div.carbonara:hover {
+    transform: scale(1.08) rotate(-2deg);
+}
+
+div.film {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+div.alice,
+div.dresses,
+div.dead {
+    width: 200px;
+    padding: 12px 12px 25px 12px;
+    background-color:rgb(213, 170, 241) ;
+    box-shadow: 0 5px 12px rgba(29, 21, 3, 0.445);
+    border-radius: 3px;
+    transition: transform 0.3s ease;
+}
+
+div.alice img,
+div.dresses img,
+div.dead img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 0;
+    display: block;
+}
+
+div.alice p,
+div.dresses p,
+div.dead p {
+    font-family: "abcd";
+    color: #533163;
+    font-size: 18px;
+}
+div.alice:hover,
+div.dresses:hover,
+div.dead:hover {
+    transform: scale(1.08) rotate(-2deg);
+}
+
+div.lagu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+div.lagu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+div.lagu > div {
+    width: 200px;
+    padding: 12px 12px 25px 12px;
+    background-color: #baf3b9;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    transition: transform 0.3s ease;
+}
+
+div.lagu img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0;
+    display: block;
+}
+
+div.lagu p {
+    margin: 12px 0 0 0;
+    color: #3c8127;
+    font-family: "abcd";
+    font-size: 18px;
+}
+
+div.lagu > div:hover {
+    transform: scale(1.08) rotate(-2deg);
+}

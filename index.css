@@ -1,0 +1,89 @@
+*{                                                                                      
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/* style pada header */
+.header{
+    background-color: rgb(255, 176, 208);
+    padding: 20px;
+    text-align: center;
+}
+/* style pada topnav */
+.topnav{
+    overflow: hidden;
+    background-color: #f6ffa5;
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: rgb(43, 167, 51);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: rgb(174, 248, 255);
+    color: rgb(120, 244, 114);
+}
+.footer{
+    background-color: rgb(99, 206, 90);
+    padding: 15px;
+    text-align: center;
+}
+/* style table */
+table, th, td{
+    border: 1px solid rgb(35, 177, 56);
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td{
+    padding: 5px;
+}
+th{
+    background-color: rgb(156, 212, 250);
+}
+tr{
+    background-color: rgb(146, 236, 123);
+}
+tr:nth-child(even){
+    background-color: rgb(255, 182, 217);
+}
+tr:hover{
+    background-color:rgb(186, 179, 255);
+}
+
+/* Style pada List */
+/* ol{ 
+    list-style-type: lower-alpha;
+}
+ul{
+    list-style-type: square;
+}
+    */
+    ol {
+    background-color: #b8e2ff;
+    border: 3px solid #6cb8ff;
+    padding: 15px 30px;
+    margin: 10px;
+    list-style-position: inside;
+}
+
+ol li {
+    background-color: #c4ffb0;
+    margin: 6px 0;
+    padding: 6px 12px;
+    border: 2px solid #3fbf38;
+    text-align: justify;
+}
+
+ol li.stroberi {
+    background-color: #82ffc5;
+    border: 2px solid #ff4d94;
+    color: rgb(83, 206, 85);
+    font-weight: bold;
+}

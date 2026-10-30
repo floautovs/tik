@@ -1,0 +1,288 @@
+body {
+    margin: 0;
+    padding: 30px;
+
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Sorean";
+    color: beige;
+}
+
+@font-face {
+    font-family: "Sorean";
+    src: url("./sorean/Sorean%20Bold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2 {
+    background-color: rgb(255, 239, 133);
+    color: rgb(61, 170, 177);
+    text-align: center;
+    font-family: "Sorean";
+    padding: 18px;
+    border-radius: 20px;
+    transition: 0.4s ease;
+}
+
+h2:hover {
+    color: rgb(244, 82, 139);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+h1 {
+    background-color: rgb(119, 177, 81);
+    color: rgb(181, 229, 255);
+    text-align: center;
+    width: 500px;
+    max-width: 80%;
+    padding: 12px;
+    border-radius: 15px;
+    font-size: 22px;
+}
+
+.judul-section {
+    width: 60%;
+    margin: 40px auto 20px;
+    background-color: rgb(244, 82, 139);
+    color: rgb(255, 239, 133);
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+div.pendahuluan {
+    margin: 35px auto;
+    width: 80%;
+    background-color: rgba(232, 123, 167, 0.94);
+    color: beige;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+div.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+div.sampah {
+    position: relative;
+    flex-shrink: 0;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 5px solid white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+div.sampah img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition:
+        transform 0.5s ease,
+        opacity 0.5s ease;
+}
+
+div.sampah img.top {
+    opacity: 1;
+    z-index: 2;
+}
+
+div.sampah img.bottom {
+    opacity: 0;
+    z-index: 1;
+}
+
+div.sampah:hover img.top {
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+div.sampah:hover img.bottom {
+    opacity: 1;
+    transform: scale(1.1);
+}
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    text-indent: 40px;
+    text-align: justify;
+    margin-bottom: 18px;
+}
+
+.jenis-container {
+    width: 85%;
+    margin: 20px auto 40px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    width: 30%;
+    background-color: rgba(255, 239, 133, 0.95);
+    color: rgb(193, 136, 22);
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.4s ease;
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover {
+    transform: translateY(-12px) rotate(1deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    background-color: rgb(181, 229, 255);
+}
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.card h4 {
+    font-size: 20px;
+    color: rgb(190, 245, 249);
+}
+
+.card p {
+    text-indent: 0;
+    text-align: justify;
+    font-size: 14px;
+}
+.info-box {
+    width: 75%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(129, 229, 236, 0.94);
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.cara-box {
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(119, 177, 81, 0.95);
+    border-radius: 25px;
+}
+.tips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.tip {
+    width: 250px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: rgb(29, 128, 29);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: 0.3s ease;
+}
+.tip:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.tip span {
+    font-size: 25px;
+
+    color: rgb(244, 82, 139);
+}
+.tip p {
+    margin: 0;
+    text-indent: 0;
+    text-align: left;
+    font-size: 14px;
+}
+.kesimpulan {
+    width: 75%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(244, 82, 139, 0.94);
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+footer {
+    margin-top: 50px;
+    background-color: rgb(255, 239, 133);
+    color: rgb(61, 170, 177);
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px;
+}
+footer p {
+    text-align: center;
+    text-indent: 0;
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    body {
+        padding: 15px;
+    }
+    div.content {
+        flex-direction: column;
+    }
+    div.sampah {
+        width: 90%;
+        height: 250px;
+    }
+    .jenis-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 80%;
+    }
+    .info-box,
+    .cara-box,
+    .kesimpulan {
+        width: 80%;
+    }
+    h1 {
+        width: 70%;
+    }
+}
+.pengertian-image {
+    width: 75%;
+    height: 230px;
+    margin: 0 auto 35px;
+    overflow: hidden;
+    border-radius: 25px;
+    border: 5px solid white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.4s ease;
+}
+.pengertian-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.5s ease;
+}
+.pengertian-image:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+
+    border-color: rgb(255, 239, 133);
+}
+.pengertian-image:hover img {
+    transform: scale(1.08);
+}
